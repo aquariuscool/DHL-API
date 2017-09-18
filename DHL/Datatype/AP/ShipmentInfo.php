@@ -77,7 +77,7 @@ class ShipmentInfo extends Base
             'type' => 'dateTime',
             'required' => false,
             'subobject' => true,
-        ), 
+        ),
         'Pieces' => array(
             'type' => '',
             'required' => false,
@@ -97,12 +97,12 @@ class ShipmentInfo extends Base
             'type' => 'dateTime',
             'required' => false,
             'subobject' => false,
-        ), 
+        ),
         'EstDlvyDateUTC' => array(
             'type' => 'dateTime',
             'required' => false,
             'subobject' => false,
-        ), 
+        ),
         'GlobalProductCode' => array(
             'type' => 'GlobalProductCode',
             'required' => false,
@@ -120,7 +120,7 @@ class ShipmentInfo extends Base
             'type' => '',
             'required' => false,
             'subobject' => false,
-        ), 
+        ),
         'Shipper' => array(
             'type' => 'Shipper',
             'required' => false,

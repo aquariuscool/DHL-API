@@ -94,7 +94,7 @@ abstract class Base extends BaseDataType
      * @var string
      * The schema version
      */
-    protected $_schemaVersion = '1.0';
+    protected $_schemaVersion = '6.0';
 
     /**
      * @var boolean
@@ -339,7 +339,7 @@ abstract class Base extends BaseDataType
 
             if ($this->_values[$name]) 
             {
-                if (is_array($this->_values[$name])) 
+                if (is_array($this->_values[$name]) && isset($infos['subobject']) && true === $infos['subobject'])
                 {
                     foreach ($this->_values[$name] as $subelement)
                     {

@@ -64,7 +64,8 @@ class KnownTrackingRequest extends Base
             'required' => false,
             'subobject' => false,
             'comment' => 'Airway bill number',
-            'maxLength' => '11',
+            //'maxLength' => '11',
+            'multivalues' => true,
         ), 
         'LPNumber' => array(
             'type' => 'string',
